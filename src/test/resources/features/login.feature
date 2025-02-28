@@ -1,3 +1,4 @@
+@Run
 Feature: Login with credentials
 
   Background:
@@ -13,7 +14,7 @@ Feature: Login with credentials
       | problem_user            | secret_sauce |
 
 
-  @Run
+
   Scenario Outline: login with wrong credentials
     When enter "<username>" and "<password>"
     Then following message is displayed "Sorry, this user has been locked out"
