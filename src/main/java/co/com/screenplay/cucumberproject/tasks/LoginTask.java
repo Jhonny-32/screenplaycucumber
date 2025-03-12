@@ -12,8 +12,8 @@ import static co.com.screenplay.cucumberproject.ui.LoginUI.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class LoginTask implements Task {
-    private String username;
-    private String password;
+    private final String username;
+    private final String password;
 
     public LoginTask(String username, String password){
         this.username = username;
